@@ -1,93 +1,73 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <RecipeDefs>
 
-	<RecipeDef>
+	<RecipeDef Name="CoreDrillBase" Abstract="True">
+		<workAmount>5000</workAmount>
+		<efficiencyStat>MiningSpeed</efficiencyStat>
+    	<effectWorking>Drill</effectWorking>
+		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<workSkill>Mining</workSkill>
+	</RecipeDef>
+
+	<!-- ==================== Actual Recipes =================== -->
+
+	<RecipeDef ParentName="CoreDrillBase">
 		<defName>MiningDeepSteel</defName>
 		<label>mining deep compacted steel</label>
 		<description>mining deep compacted steel.</description>
-		<jobString>Mining deep compacted steel.</jobString>
-		<workAmount>5000</workAmount>
-		<efficiencyStat>MiningSpeed</efficiencyStat>
-		<effectWorking>CutStone</effectWorking>
-		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<jobString>Mining deep compacted steel.</jobString>		
 		<products>
-			<Steel>25</Steel>
-		</products>
-		<workSkill>Mining</workSkill>
+			<Steel>25</Steel>			
+		</products>		
 	</RecipeDef>
 	
-	<RecipeDef>
+	<RecipeDef ParentName="CoreDrillBase">
 		<defName>MiningDeepPlasteel</defName>
 		<label>mining deep compacted plasteel</label>
 		<description>mining deep compacted plasteel.</description>
 		<jobString>Mining deep compacted plasteel.</jobString>
-		<workAmount>5000</workAmount>
-		<efficiencyStat>MiningSpeed</efficiencyStat>
-		<effectWorking>CutStone</effectWorking>
-		<workSkillLearnFactor>0.2</workSkillLearnFactor>
 		<products>
-			<Plasteel>15</Plasteel>
-		</products>
-		<workSkill>Mining</workSkill>
+			<Plasteel>15</Plasteel>			
+		</products>	
 	</RecipeDef>
 	
-	<RecipeDef>
+	<RecipeDef ParentName="CoreDrillBase">
 		<defName>MiningDeepUranium</defName>
 		<label>mining deep uranium</label>
 		<description>mining deep uranium.</description>
-		<jobString>Mining deep uranium</jobString>
-		<workAmount>5000</workAmount>
-		<efficiencyStat>MiningSpeed</efficiencyStat>
-		<effectWorking>CutStone</effectWorking>
-		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<jobString>Mining deep uranium</jobString>		
 		<products>
-			<Uranium>5</Uranium>
-		</products>
-		<workSkill>Mining</workSkill>
+			<Uranium>5</Uranium>			
+		</products>		
 	</RecipeDef>
 	
-	<RecipeDef>
+	<RecipeDef ParentName="CoreDrillBase">
 		<defName>MiningDeepSilver</defName>
 		<label>mining deep silver</label>
 		<description>mining deep silver.</description>
-		<jobString>Mining deep silver</jobString>
-		<workAmount>5000</workAmount>
-		<efficiencyStat>MiningSpeed</efficiencyStat>
-		<effectWorking>CutStone</effectWorking>
-		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<jobString>Mining deep silver</jobString>		
 		<products>
-			<Silver>5</Silver>
-		</products>
-		<workSkill>Mining</workSkill>
+			<Silver>5</Silver>					
+		</products>		
 	</RecipeDef>
 
-	<RecipeDef>
+	<RecipeDef ParentName="CoreDrillBase">
 		<defName>MiningDeepGold</defName>
 		<label>mining deep gold</label>
 		<description>mining deep gold.</description>
-		<jobString>Mining deep gold</jobString>
-		<workAmount>5000</workAmount>
-		<efficiencyStat>MiningSpeed</efficiencyStat>
-		<effectWorking>CutStone</effectWorking>
-		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<jobString>Mining deep gold</jobString>		
 		<products>
-			<Gold>5</Gold>
-		</products>
-		<workSkill>Mining</workSkill>
+			<Gold>5</Gold>					
+		</products>		
 	</RecipeDef>
 	
-	<RecipeDef>
+	<RecipeDef ParentName="CoreDrillBase">
 		<defName>MiningDeepJade</defName>
 		<label>mining deep jade</label>
 		<description>mining deep jade.</description>
-		<jobString>Mining deep jade</jobString>
-		<workAmount>5000</workAmount>
-		<efficiencyStat>MiningSpeed</efficiencyStat>
-		<effectWorking>CutStone</effectWorking>
-		<workSkillLearnFactor>0.2</workSkillLearnFactor>
+		<jobString>Mining deep jade</jobString>		
 		<products>
-			<Jade>5</Jade>
-		</products>
-		<workSkill>Mining</workSkill>
+			<Jade>5</Jade>					
+		</products>		
 	</RecipeDef>
 </RecipeDefs>

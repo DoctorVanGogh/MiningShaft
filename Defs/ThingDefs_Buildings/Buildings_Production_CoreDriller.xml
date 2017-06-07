@@ -1,34 +1,52 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ThingDefs>
-
   <ThingDef ParentName="BuildingBase">
-    <defName>CoreDrill</defName>
-	<ThingClass>Building_WorkTable</ThingClass>
+    <DefName>CoreDrill</DefName>
+    <ThingClass>Building_WorkTable</ThingClass>
     <label>core drill</label>
-    <description>A ultra deep-crust drilling rig for extracting minerals from deep under the surface.</description>
-    <size>(3,3)</size>
-    <altitudeLayer>Building</altitudeLayer>
-    <passability>PassThroughOnly</passability>
-    <pathCost>70</pathCost>
-    <fillPercent>0.5</fillPercent>
-    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
-    <hasInteractionCell>true</hasInteractionCell>
-    <designationCategory>Production</designationCategory>
-    <rotatable>true</rotatable>
+    <Description>A ultra deep-crust drilling rig for extracting minerals from deep under the surface.</Description>
+    <graphicData>
+      <texPath>Things/Building/Production/DeepDrill</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <costStuffCount>75</costStuffCount>
     <costList>
       <Steel>2000</Steel>
       <Component>10</Component>
-	  <Plasteel>400</Plasteel>
+      <Plasteel>400</Plasteel>
     </costList>
-    <researchPrerequisites>
-      <li>DeepDrilling</li>
-    </researchPrerequisites>
+    <AltitudeLayer>Building</AltitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
     <statBases>
       <MaxHitPoints>140</MaxHitPoints>
       <WorkToBuild>5000</WorkToBuild>
       <Flammability>1.0</Flammability>
       <Beauty>-25</Beauty>
     </statBases>
+    <Size>(3,3)</Size>
+    <DesignationCategory>Production</DesignationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <recipes>
+      <li>MiningDeepSteel</li>
+      <li>MiningDeepPlasteel</li>
+      <li>MiningDeepUranium</li>
+      <li>MiningDeepSilver</li>
+      <li>MiningDeepGold</li>
+      <li>MiningDeepJade</li>
+    </recipes>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
@@ -38,23 +56,10 @@
       <li Class="CompProperties_Flickable"/>
       <li Class="CompProperties_Breakdownable"/>
     </comps>
-    <graphicData>
-      <graphicClass>Graphic_Single</graphicClass>
-      <texPath>Things/Building/Production/DeepDrill</texPath>
-      <drawSize>(4,4)</drawSize>
-      <drawRotated>false</drawRotated>
-    </graphicData>
-	<recipes>
-      <li>MiningDeepSteel</li>
-	  <li>MiningDeepPlasteel</li>
-	  <li>MiningDeepUranium</li>
-	  <li>MiningDeepSilver</li>
-	  <li>MiningDeepGold</li>
-	  <li>MiningDeepJade</li>
-    </recipes>
-    <inspectorTabs>
-      <li>ITab_Bills</li>
-    </inspectorTabs>
+    <designationHotKey>Misc12</designationHotKey>
+    <rotatable>true</rotatable>
+    <researchPrerequisites>
+      <li>DeepDrilling</li>
+    </researchPrerequisites>
   </ThingDef>
-  
 </ThingDefs>

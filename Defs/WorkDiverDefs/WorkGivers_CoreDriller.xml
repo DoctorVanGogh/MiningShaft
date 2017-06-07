@@ -1,13 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <WorkGivers>
-
-    <WorkGiverDef>
+  <WorkGiverDef>
     <defName>DoBillsCoreMine</defName>
     <label>do bills at deep core mine</label>
     <giverClass>WorkGiver_DoBill</giverClass>
     <workType>Mining</workType>
     <priorityInType>90</priorityInType>
-         <fixedBillGiverDefs>
+    <fixedBillGiverDefs>
       <li>CoreDrill</li>
     </fixedBillGiverDefs>
     <verb>work</verb>
@@ -16,5 +15,4 @@
       <li>Manipulation</li>
     </requiredCapacities>
   </WorkGiverDef>
-
 </WorkGivers>
