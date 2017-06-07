@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+
+    <name>Core Driller</name>
+
+    <author>TheUbie</author>
+
+    <url>https://ludeon.com/forums/index.php?topic=25346.0</url>
+
+    <targetVersion>0.16.1393</targetVersion>
+
+<description>
+A deep core driller capable of pulling out any material you want, given enough power and work by your pawns.
+
+[Version 1.1.1]
+</description>
+
+</ModMetaData>
