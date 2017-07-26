@@ -1,5 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <RecipeDefs>
+	<!-- 
+		!!!!! OBSOLETE !!!!!
+
+		Retire 09/2017 (kept for now to not screw up existing saves & jobs)
+	-->
 
 	<RecipeDef Name="CoreDrillBase" Abstract="True">
 		<workAmount>5000</workAmount>

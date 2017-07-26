@@ -33,14 +33,6 @@
     <hasInteractionCell>true</hasInteractionCell>
     <interactionCellOffset>(0,0,-2)</interactionCellOffset>
     <surfaceType>Item</surfaceType>
-    <recipes>
-      <li>MiningDeepSteel</li>
-      <li>MiningDeepPlasteel</li>
-      <li>MiningDeepUranium</li>
-      <li>MiningDeepSilver</li>
-      <li>MiningDeepGold</li>
-      <li>MiningDeepJade</li>
-    </recipes>
     <inspectorTabs>
       <li>ITab_Bills</li>
     </inspectorTabs>

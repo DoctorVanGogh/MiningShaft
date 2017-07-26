@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-    <name>Core Driller A17</name>
-    <author>TheUbie &amp; DoctorVanGogh (A17 version)</author>
-    <url>https://ludeon.com/forums/index.php?topic=25346.0</url>
+    <name>Omni Core Drill A17</name>
+    <author>DoctorVanGogh &amp; TheUbie</author>
+    <url>https://github.com/DoctorVanGogh/MiningShaft</url>
     <targetVersion>0.17.1557</targetVersion>
-    <description xml:space="preserve">A deep core driller capable of pulling out any material you want, given enough power and work by your pawns.
+    <description><![CDATA[ A deep core driller capable of pulling out any material you want, given enough power and work by your pawns.
 
-[Version 1.3]</description>
+Supports any and all mod-added mineable materials out of the box.]]></description>
 </ModMetaData>
