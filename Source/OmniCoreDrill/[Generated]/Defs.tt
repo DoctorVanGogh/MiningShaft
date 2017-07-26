@@ -12,6 +12,7 @@
 
 	SetNamespace("DoctorVanGogh.OmniCoreDrill");
 
+	AddDef<StatDef>("MiningYield");
 	AddDef<StatDef>("MiningSpeed");
 	AddDef<StatDef>("MaxHitPoints");
 

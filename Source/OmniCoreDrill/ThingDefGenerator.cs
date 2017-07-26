@@ -46,7 +46,8 @@ namespace DoctorVanGogh.OmniCoreDrill {
 
                 yield return new RecipeDef {
                                  workAmount = work,
-                                 efficiencyStat = DefReferences.Stat_MiningSpeed,
+                                 efficiencyStat = DefReferences.Stat_MiningYield,
+                                 workSpeedStat = DefReferences.Stat_MiningSpeed,
                                  effectWorking = DefReferences.Effecter_Drill,
                                  workSkillLearnFactor = 0.2f,
                                  workSkill = DefReferences.Skill_Mining,
