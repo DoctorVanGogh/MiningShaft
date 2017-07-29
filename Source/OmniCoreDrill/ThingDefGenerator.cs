@@ -63,7 +63,9 @@ namespace DoctorVanGogh.OmniCoreDrill {
                                             },
                                  recipeUsers = new List<ThingDef> {
                                                    DefReferences.Thing_CoreDrill
-                                               }
+                                               },
+                                 
+
                              };
             }
         }
