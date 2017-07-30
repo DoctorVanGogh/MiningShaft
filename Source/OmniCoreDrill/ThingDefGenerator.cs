@@ -11,6 +11,8 @@ namespace DoctorVanGogh.OmniCoreDrill {
         private const float densityFactor = 40f;
         private const float commnalityFactor = 2000;
 
+        private const float minScatterCommonality = 0.001f;
+
         public static IEnumerable<RecipeDef> MineDeepResourceDefs() {
 
             foreach (var source in DefDatabase<ThingDef>.AllDefs.Where(td => td.mineable && td.building?.mineableThing != null)) {
@@ -26,7 +28,7 @@ namespace DoctorVanGogh.OmniCoreDrill {
 
                 var work = hitpointsPerLump.Value*workPerHitpoint
                            + (b.isResourceRock
-                               ? (float)(commnalityFactor/Math.Sqrt(b.mineableScatterCommonality))
+                               ? (float)(commnalityFactor/Math.Sqrt(Math.Max(b.mineableScatterCommonality, minScatterCommonality)))
                                : 0);
 
                 var yield = b.isResourceRock
