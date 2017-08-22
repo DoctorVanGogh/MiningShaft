@@ -17,17 +17,73 @@ namespace DoctorVanGogh.OmniCoreDrill {
 	public static partial class LanguageKeys {
 		public static class @keyed {
 			/// <summary>
-			/// Get's the translation key for '<em>mining deep {0}</em>'
+			/// Get's the translation key for '<em>mine deep {0}</em>'
 			/// </summary>
 			public const string @ocd_label = "ocd.label";
 			/// <summary>
-			/// Get's the translation key for '<em>mining deep {0}.</em>'
+			/// Get's the translation key for '<em>Drill deep into the planetary crust and mine {0}.<br /><br />Yield: {1:n0} {2}</em>'
 			/// </summary>
 			public const string @ocd_description = "ocd.description";
 			/// <summary>
 			/// Get's the translation key for '<em>Mining deep {0}</em>'
 			/// </summary>
 			public const string @ocd_jobString = "ocd.jobString";
+			/// <summary>
+			/// Get's the translation key for '<em>Omni Core Drill</em>'
+			/// </summary>
+			public const string @ocd = "ocd";
+			/// <summary>
+			/// Get's the translation key for '<em>Global</em>'
+			/// </summary>
+			public const string @ocd_global = "ocd.global";
+			/// <summary>
+			/// Get's the translation key for '<em>Per-material settings are available during a running game.</em>'
+			/// </summary>
+			public const string @ocd_gameneeded = "ocd.gameneeded";
+			/// <summary>
+			/// Get's the translation key for '<em>Work</em>'
+			/// </summary>
+			public const string @ocd_work = "ocd.work";
+			/// <summary>
+			/// Get's the translation key for '<em>Yield</em>'
+			/// </summary>
+			public const string @ocd_yield = "ocd.yield";
+			/// <summary>
+			/// Get's the translation key for '<em>Material</em>'
+			/// </summary>
+			public const string @ocd_material = "ocd.material";
+			/// <summary>
+			/// Get's the translation key for '<em>Resource lump sizes</em>'
+			/// </summary>
+			public const string @ocd_density = "ocd.density";
+			/// <summary>
+			/// Get's the translation key for '<em>Drill work per resource unit</em>'
+			/// </summary>
+			public const string @ocd_drillwork = "ocd.drillwork";
+			/// <summary>
+			/// Get's the translation key for '<em>Resource rarity</em>'
+			/// </summary>
+			public const string @ocd_commonality = "ocd.commonality";
+			/// <summary>
+			/// Get's the translation key for '<em>Controls how large deposits of resources are. Affects resource &lt;em&gt;yields.<br />Has no effect on stone chunks.&lt;/em&gt;</em>'
+			/// </summary>
+			public const string @ocd_density_tip = "ocd.density.tip";
+			/// <summary>
+			/// Get's the translation key for '<em>Controls how much work is needed to drill each resource.<br />Drill work is built of two components: Drilling &lt;em&gt;to&lt;/em&gt; - and ultimately drilling &lt;em&gt;into&lt;/em&gt; the resources.<br /><br />This modifies the drilling &lt;em&gt;into&lt;/em&gt; or &lt;em&gt;&apos;get the stuff&apos;&lt;/em&gt; component.</em>'
+			/// </summary>
+			public const string @ocd_drillwork_tip = "ocd.drillwork.tip";
+			/// <summary>
+			/// Get's the translation key for '<em>Controls how much work is needed to &apos;find&apos; each resource.<br />Drill work is built of two components: Drilling &lt;em&gt;to&lt;/em&gt; - and ultimately drilling &lt;em&gt;into&lt;/em&gt; the resources.<br /><br />This modifies the drilling &lt;em&gt;to&lt;/em&gt; or &lt;em&gt;&apos;find the stuff&apos;&lt;/em&gt; component.<br />Has no effect on stone chunks.</em>'
+			/// </summary>
+			public const string @ocd_commonality_tip = "ocd.commonality.tip";
+			/// <summary>
+			/// Get's the translation key for '<em>Directly modifies the work needed to drill for this material.</em>'
+			/// </summary>
+			public const string @ocd_work_tip = "ocd.work.tip";
+			/// <summary>
+			/// Get's the translation key for '<em>Directly modifies the drilling yield for this material.<br />NOTE: Yields are capped to produce at least &lt;em&gt;one&lt;/em&gt; unit of the material. If the yield is scaled down further, the yield value will not change - instead the amount of work will increase to compensate.</em>'
+			/// </summary>
+			public const string @ocd_yield_tip = "ocd.yield.tip";
 		}
 	}
 }

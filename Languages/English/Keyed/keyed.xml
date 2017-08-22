@@ -5,4 +5,39 @@
 
 Yield: {1:n0} {2}]]></ocd.description>
     <ocd.jobString>Mining deep {0}</ocd.jobString>    
+
+    <ocd>Omni Core Drill</ocd>
+    <ocd.global>Global</ocd.global>
+    <ocd.gameneeded>Per-material settings are available during a running game.</ocd.gameneeded>
+
+    <ocd.work>Work</ocd.work>
+    <ocd.yield>Yield</ocd.yield>
+    <ocd.material>Material</ocd.material>
+
+    <ocd.density>Resource lump sizes</ocd.density>
+    <ocd.drillwork>Drill work per resource unit</ocd.drillwork>
+    <ocd.commonality>Resource rarity</ocd.commonality>
+    
+    <ocd.density.tip><![CDATA[Controls how large deposits of resources are. Affects resource <i>yields</i>.
+
+Has no effect on stone chunks.
+
+NOTE: Yields are capped to produce at least <i>one</i> unit of a material. If the yield is scaled down further, the yield value will not change - instead the amount of work will increase to compensate.]]></ocd.density.tip>
+    <ocd.drillwork.tip><![CDATA[Controls how much work is needed to drill each resource.
+Drill work is built of two components: Drilling <i>to</i> - and ultimately drilling <i>into</i> the resources.
+
+This modifies the drilling <i>into</i> or <i>'get the stuff'</i> component.]]></ocd.drillwork.tip>
+    <ocd.commonality.tip><![CDATA[Controls how much work is needed to 'find' each resource.
+Drill work is built of two components: Drilling <i>to</i> - and ultimately drilling <i>into</i> the resources.
+
+This modifies the drilling <i>to</i> or <i>'find the stuff'</i> component.
+
+Has no effect on stone chunks.]]></ocd.commonality.tip>
+    
+    <ocd.work.tip><![CDATA[Directly modifies the work needed to drill for a material.]]></ocd.work.tip>
+    <ocd.yield.tip><![CDATA[Directly modifies the drilling yield for a material.
+
+NOTE: Yields are capped to produce at least <i>one</i> unit of a material. If the yield is scaled down further, the yield value will not change - instead the amount of work will increase to compensate.]]></ocd.yield.tip>
+
+
 </LanguageData>

@@ -23,7 +23,7 @@ namespace DoctorVanGogh.OmniCoreDrill.Patches {
              * 
              * This patch works...
              */
-            foreach (RecipeDef current3 in ThingDefGenerator.MineDeepResourceDefs()) {
+            foreach (RecipeDef current3 in ThingDefGenerator.GetCoreMiningDefs()) {
                 current3.PostLoad();
                 DefDatabase<RecipeDef>.Add(current3);
             }
