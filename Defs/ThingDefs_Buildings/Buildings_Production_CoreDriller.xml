@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ThingDefs>
+<Defs>
   <ThingDef Name="BuildingBase" Abstract="True">
     <category>Building</category>
     <thingClass>Building</thingClass>
@@ -16,10 +16,10 @@
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
-    <DefName>CoreDrill</DefName>
-    <ThingClass>Building_WorkTable</ThingClass>
+    <defName>CoreDrill</defName>
+    <thingClass>Building_WorkTable</thingClass>
     <label>core drill</label>
-    <Description>A ultra deep-crust drilling rig for extracting minerals from deep under the surface.</Description>
+    <description>A ultra deep-crust drilling rig for extracting minerals from deep under the surface.</description>
     <graphicData>
       <texPath>Things/Building/Production/DeepDrill</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -32,7 +32,7 @@
       <Component>10</Component>
       <Plasteel>400</Plasteel>
     </costList>
-    <AltitudeLayer>Building</AltitudeLayer>
+    <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
     <statBases>
@@ -41,8 +41,8 @@
       <Flammability>1.0</Flammability>
       <Beauty>-25</Beauty>
     </statBases>
-    <Size>(3,3)</Size>
-    <DesignationCategory>Production</DesignationCategory>
+    <size>(3,3)</size>
+    <designationCategory>Production</designationCategory>
     <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
     <hasInteractionCell>true</hasInteractionCell>
@@ -69,4 +69,4 @@
       <li>DeepDrilling</li>
     </researchPrerequisites>
   </ThingDef>
-</ThingDefs>
+</Defs>

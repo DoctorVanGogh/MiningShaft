@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Indexed by ThingDef for all drillable resources">
+    <Position X="3.729" Y="3.708" Height="0.458" Width="1.627" />
+  </Comment>
+  <Comment CommentText="Event triggers recipe update(s)">
+    <Position X="7.344" Y="6.479" Height="0.521" Width="1.679" />
+  </Comment>
+  <Class Name="DoctorVanGogh.OmniCoreDrill.OmniCoreDrillMod">
+    <Position X="2" Y="0.5" Width="3.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAADAAAIAAsAAAAgAAAMIAAAAAgAACAAAQAAA=</HashCode>
+      <FileName>OmniCoreDrill.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Settings" />
+      <Property Name="MaterialParams" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DoctorVanGogh.OmniCoreDrill.Settings" Collapsed="true">
+    <Position X="6" Y="0.5" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAgAACAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OmniCoreDrill.Settings.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="GlobalParameters" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DoctorVanGogh.OmniCoreDrill.GlobalDrillParameters">
+    <Position X="10.25" Y="0.5" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAgABgAAAAAAAAQAAAAAAAABAAAAAQAAAAACAAACAAA=</HashCode>
+      <FileName>Settings\GlobalDrillParameters.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Commonality" />
+      <Property Name="Density" />
+      <Property Name="DrillWork" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DoctorVanGogh.OmniCoreDrill.Multiplier">
+    <Position X="7.25" Y="4.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ABgAAAAAAAAIAAAAIAAAAAAAgAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Settings\Multiplier.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DoctorVanGogh.OmniCoreDrill.GameMaterialParameters">
+    <Position X="2" Y="2.25" Width="3.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAggAAAAAIIAAAAACAAAAgAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Settings\GameMaterialParameters.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="this[Verse.ThingDef]" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DoctorVanGogh.OmniCoreDrill.MaterialParameters">
+    <Position X="2" Y="4.25" Width="3.25" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>IAgAAAAAAAAAgAAAAAAAAAAAAAAAAQAACAAAAQAAAAA=</HashCode>
+      <FileName>Settings\MaterialParameters.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Work" />
+      <Property Name="Yield" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
