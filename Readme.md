@@ -1,4 +1,4 @@
-[![RimWorld Alpha 17](https://img.shields.io/badge/RimWorld-Alpha%2017-brightgreen.svg)](http://rimworldgame.com/) [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![RimWorld Alpha 18](https://img.shields.io/badge/RimWorld-Alpha%2018-yellow.svg)](http://rimworldgame.com/) [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 <p align="center">
 <em>"Because OCD can just screw up everything"</em>
@@ -20,9 +20,7 @@ _Plasteel_ on the other hand - while much rarer and harder to mine (and drill) -
 Can be installed into existing savegames. Can be safely uninstalled once all bills on the core drill(s) and the drills themselves are removed/deconstructed.
 
 TheUbie's original caveat still applies:
-> This mod does add a new jobgiver into the game. There is a known issue where adding a new jobgiver will break pawns who are active in jobs already. If you are running mods on your saved game, the chance of this happening increases. I suggest starting a fresh save game, but if you wish to use this with an old save and you do have a pawn (or pawns) who start behaving very oddly, one reported work around is to use dev mode (turn it on in options before loading the colony). Check your pawns to see if they are acting wierd (well, more wierd than normal...most of them are nuts to begin with). You can reset their little pawn brains by using the Tool:Down tool to down your pawn. After that, you can either heal them in game normally (hey, free experience for your doctor!) or you can use Tool:Apply Damage... select restore body part, and then select torso to completely heal your pawn (warning: This will also fix old injuries, if you with to preserve those, heal the specific body parts in order). This will get them back on their feet. They will have a negative mood because of the shock of pain. If you fully healed them it should wear off quickly. 
-
-Can be installed as a drop-in replacement for the original A16 Deep Core Miner by TheUbie. Existing drills will no longer offer the 'old' drilling bills but be able to complete any existing queued jobs. Though ideally you would want to remove any existing bills, and re-add them with the 'new' OCD drill recipes.
+> This mod does add a new jobgiver into the game. There is a known issue where adding a new jobgiver will break pawns who are active in jobs already. If you are running mods on your saved game, the chance of this happening increases. I suggest starting a fresh save game, but if you wish to use this with an old save and you do have a pawn (or pawns) who start behaving very oddly, one reported work around is to use dev mode (turn it on in options before loading the colony). Check your pawns to see if they are acting wierd (well, more wierd than normal...most of them are nuts to begin with). You can reset their little pawn brains by using the Tool:Down tool to down your pawn. After that, you can either heal them in game normally (hey, free experience for your doctor!) or you can use Tool:Apply Damage... select restore body part, and then select torso to completely heal your pawn (warning: This will also fix old injuries, if you with to preserve those, heal the specific body parts in order). This will get them back on their feet. They will have a negative mood because of the shock of pain. If you fully healed them it should wear off quickly.
 
 ### (Somewhat) long winded balancing explanation
 
@@ -31,7 +29,7 @@ Higher hitpoints per lump (Plasteel is tough and requires a lot of hacking/drill
 
 Also there's a "find the stuff" component built into the drilling work required (Except for stone - that's literally everywhere). The less common stuff is, the higher that amount will be.
 
-This all turns out to the following values for vanilla materials (as of A17):
+This all turns out to the following values for vanilla materials (as of A18):
 
 Material | work to Drill | Yield | $ / Work
 --- | ---: | ---: | ---:
@@ -47,9 +45,6 @@ Limestone | 26 | 1 | -
 Slate | 15 | 1 | -
 Marble | 14 | 1 | -
 Sandstone | 12 | 1 | -
-
-Those yields are about equal to the 'old' Core Driller results for steel, significantly better for any type of stone, and considerably worse for other materials.
-So if you need tons of Plasteel or Uranium - build some more drills.
 
 The generalized formula also allows inclusion of any custom mod-materials.
 
