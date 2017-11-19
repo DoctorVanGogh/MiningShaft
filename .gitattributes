@@ -1,0 +1,3 @@
+.git* export-ignore
+.vs* export-ignore
+Source/ export-ignore
