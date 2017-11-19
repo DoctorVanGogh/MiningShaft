@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<WorkGivers>
+<Defs>
   <WorkGiverDef>
     <defName>DoBillsCoreMine</defName>
     <label>do bills at deep core mine</label>
@@ -15,4 +15,4 @@
       <li>Manipulation</li>
     </requiredCapacities>
   </WorkGiverDef>
-</WorkGivers>
+</Defs>

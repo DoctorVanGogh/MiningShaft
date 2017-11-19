@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-    <name>Omni Core Drill A17</name>
+    <name>Omni Core Drill B17</name>
     <author>DoctorVanGogh &amp; TheUbie</author>
     <url>https://github.com/DoctorVanGogh/MiningShaft</url>
-    <targetVersion>0.17.1557</targetVersion>
+    <targetVersion>0.18.0</targetVersion>
     <description><![CDATA[ A deep core driller capable of pulling out any material you want, given enough power and work by your pawns.
 
 Supports any and all mod-added mineable materials out of the box.]]></description>
