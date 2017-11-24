@@ -39,5 +39,5 @@ Has no effect on stone chunks.]]></ocd.commonality.tip>
 
 NOTE: Yields are capped to produce at least <i>one</i> unit of a material. If the yield is scaled down further, the yield value will not change - instead the amount of work will increase to compensate.]]></ocd.yield.tip>
 
-
+    <ocd.unfinishedPlan>Unfinished {0} drilling plan</ocd.unfinishedPlan>
 </LanguageData>

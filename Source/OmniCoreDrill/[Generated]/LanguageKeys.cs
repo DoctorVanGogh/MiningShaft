@@ -65,25 +65,29 @@ namespace DoctorVanGogh.OmniCoreDrill {
 			/// </summary>
 			public const string @ocd_commonality = "ocd.commonality";
 			/// <summary>
-			/// Get's the translation key for '<em>Controls how large deposits of resources are. Affects resource &lt;em&gt;yields.<br />Has no effect on stone chunks.&lt;/em&gt;</em>'
+			/// Get's the translation key for '<em>Controls how large deposits of resources are. Affects resource &lt;i&gt;yields&lt;/i&gt;.<br /><br />Has no effect on stone chunks.<br /><br />NOTE: Yields are capped to produce at least &lt;i&gt;one&lt;/i&gt; unit of a material. If the yield is scaled down further, the yield value will not change - instead the amount of work will increase to compensate.</em>'
 			/// </summary>
 			public const string @ocd_density_tip = "ocd.density.tip";
 			/// <summary>
-			/// Get's the translation key for '<em>Controls how much work is needed to drill each resource.<br />Drill work is built of two components: Drilling &lt;em&gt;to&lt;/em&gt; - and ultimately drilling &lt;em&gt;into&lt;/em&gt; the resources.<br /><br />This modifies the drilling &lt;em&gt;into&lt;/em&gt; or &lt;em&gt;&apos;get the stuff&apos;&lt;/em&gt; component.</em>'
+			/// Get's the translation key for '<em>Controls how much work is needed to drill each resource.<br />Drill work is built of two components: Drilling &lt;i&gt;to&lt;/i&gt; - and ultimately drilling &lt;i&gt;into&lt;/i&gt; the resources.<br /><br />This modifies the drilling &lt;i&gt;into&lt;/i&gt; or &lt;i&gt;&apos;get the stuff&apos;&lt;/i&gt; component.</em>'
 			/// </summary>
 			public const string @ocd_drillwork_tip = "ocd.drillwork.tip";
 			/// <summary>
-			/// Get's the translation key for '<em>Controls how much work is needed to &apos;find&apos; each resource.<br />Drill work is built of two components: Drilling &lt;em&gt;to&lt;/em&gt; - and ultimately drilling &lt;em&gt;into&lt;/em&gt; the resources.<br /><br />This modifies the drilling &lt;em&gt;to&lt;/em&gt; or &lt;em&gt;&apos;find the stuff&apos;&lt;/em&gt; component.<br />Has no effect on stone chunks.</em>'
+			/// Get's the translation key for '<em>Controls how much work is needed to &apos;find&apos; each resource.<br />Drill work is built of two components: Drilling &lt;i&gt;to&lt;/i&gt; - and ultimately drilling &lt;i&gt;into&lt;/i&gt; the resources.<br /><br />This modifies the drilling &lt;i&gt;to&lt;/i&gt; or &lt;i&gt;&apos;find the stuff&apos;&lt;/i&gt; component.<br /><br />Has no effect on stone chunks.</em>'
 			/// </summary>
 			public const string @ocd_commonality_tip = "ocd.commonality.tip";
 			/// <summary>
-			/// Get's the translation key for '<em>Directly modifies the work needed to drill for this material.</em>'
+			/// Get's the translation key for '<em>Directly modifies the work needed to drill for a material.</em>'
 			/// </summary>
 			public const string @ocd_work_tip = "ocd.work.tip";
 			/// <summary>
-			/// Get's the translation key for '<em>Directly modifies the drilling yield for this material.<br />NOTE: Yields are capped to produce at least &lt;em&gt;one&lt;/em&gt; unit of the material. If the yield is scaled down further, the yield value will not change - instead the amount of work will increase to compensate.</em>'
+			/// Get's the translation key for '<em>Directly modifies the drilling yield for a material.<br /><br />NOTE: Yields are capped to produce at least &lt;i&gt;one&lt;/i&gt; unit of a material. If the yield is scaled down further, the yield value will not change - instead the amount of work will increase to compensate.</em>'
 			/// </summary>
 			public const string @ocd_yield_tip = "ocd.yield.tip";
+			/// <summary>
+			/// Get's the translation key for '<em>Unfinished {0} drilling plan</em>'
+			/// </summary>
+			public const string @ocd_unfinishedPlan = "ocd.unfinishedPlan";
 		}
 	}
 }

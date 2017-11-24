@@ -48,14 +48,18 @@ Sandstone | 12 | 1 | -
 
 The generalized formula also allows inclusion of any custom mod-materials.
 
----
+## Third Party Notices
 
 Based on TheUbie's "[Deep Core Miner](https://ludeon.com/forums/index.php?topic=25346.45).
 
-## Powered by ![Harmony](https://github.com/pardeike/Harmony)
+Drilling plan icon derived from [Fluffy's Blueprint mod](https://github.com/FluffierThanThou/Blueprints) - licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+
+### Powered by ![Harmony](https://github.com/pardeike/Harmony)
 
 <p align="center">
 <img alt="Powered by Harmony" src="https://camo.githubusercontent.com/074bf079275fa90809f51b74e9dd0deccc70328f/68747470733a2f2f7332342e706f7374696d672e6f72672f3538626c31727a33392f6c6f676f2e706e67" />
 </p>
 
 Harmony is lisenced under a [MIT license](https://raw.githubusercontent.com/pardeike/Harmony/master/LICENSE).
+
+

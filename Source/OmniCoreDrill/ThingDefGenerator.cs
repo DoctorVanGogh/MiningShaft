@@ -50,8 +50,7 @@ namespace DoctorVanGogh.OmniCoreDrill {
                                      recipeUsers = new List<ThingDef> {
                                                        DefReferences.Thing_CoreDrill
                                                    },
-
-
+                                     unfinishedThingDef = DefReferences.Thing_UnfinishedDrillingPlan
                                  };
 
                     UpdateGeneratedDef(t, recipe, props, source.LabelCap);
@@ -60,8 +59,6 @@ namespace DoctorVanGogh.OmniCoreDrill {
                     _drillProperties[t] = props;
                     _sourceLabels[t] = source.LabelCap;
                 }
-
-
             }
             return _miningRecipes.Values;
         }

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef>
+    <defName>UnfinishedDrillingPlan</defName>
+    <thingClass>DoctorVanGogh.OmniCoreDrill.UnfinishedDrillingPlan</thingClass>
+    <category>Item</category>
+    <label>unfinished drilling plan</label>
+    <graphicData>
+      <texPath>Things/Item/Unfinished/UnfinishedDrillingPlan</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <altitudeLayer>Item</altitudeLayer>
+    <useHitPoints>true</useHitPoints>
+    <isUnfinishedThing>true</isUnfinishedThing>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <selectable>true</selectable>
+    <tradeability>Never</tradeability>
+    <drawerType>RealtimeOnly</drawerType>
+    <!-- For CompForbiddable -->
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+			<DeteriorationRate>0.5</DeteriorationRate>
+			<Beauty>-4</Beauty>
+      <Mass>1</Mass> <!-- ingredients are added to this value -->
+		</statBases>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+    </comps>
+    <alwaysHaulable>true</alwaysHaulable>
+    <rotatable>false</rotatable>
+    <pathCost>15</pathCost>
+    <thingCategories>
+      <li>Unfinished</li>
+    </thingCategories>
+    <stuffCategories />
+  </ThingDef>
+</Defs>
