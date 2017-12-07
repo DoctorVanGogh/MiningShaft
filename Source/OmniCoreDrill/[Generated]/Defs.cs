@@ -18,11 +18,6 @@ namespace DoctorVanGogh.OmniCoreDrill {
 	[SuppressMessage("ReSharper", "FieldCanBeMadeReadOnly.Local")]
 	[SuppressMessage("ReSharper", "ConvertPropertyToExpressionBody")]
 	public partial class DefNames {
-		public const string @Effecter_Drill = @"Drill";
-		public const string @Skill_Mining = @"Mining";
-		public const string @Stat_MaxHitPoints = @"MaxHitPoints";
-		public const string @Stat_MiningSpeed = @"MiningSpeed";
-		public const string @Stat_MiningYield = @"MiningYield";
 		public const string @Thing_CoreDrill = @"CoreDrill";
 		public const string @Thing_UnfinishedDrillingPlan = @"UnfinishedDrillingPlan";
 	}
@@ -34,18 +29,8 @@ namespace DoctorVanGogh.OmniCoreDrill {
 	[SuppressMessage("ReSharper", "ConvertPropertyToExpressionBody")]
 	public partial class DefReferences {
 		private static Verse.ThingDef _Thing_CoreDrill = Verse.DefDatabase<Verse.ThingDef>.GetNamed(DefNames.Thing_CoreDrill);
-		private static Verse.EffecterDef _Effecter_Drill = Verse.DefDatabase<Verse.EffecterDef>.GetNamed(DefNames.Effecter_Drill);
-		private static RimWorld.StatDef _Stat_MaxHitPoints = Verse.DefDatabase<RimWorld.StatDef>.GetNamed(DefNames.Stat_MaxHitPoints);
-		private static RimWorld.SkillDef _Skill_Mining = Verse.DefDatabase<RimWorld.SkillDef>.GetNamed(DefNames.Skill_Mining);
-		private static RimWorld.StatDef _Stat_MiningSpeed = Verse.DefDatabase<RimWorld.StatDef>.GetNamed(DefNames.Stat_MiningSpeed);
-		private static RimWorld.StatDef _Stat_MiningYield = Verse.DefDatabase<RimWorld.StatDef>.GetNamed(DefNames.Stat_MiningYield);
 		private static Verse.ThingDef _Thing_UnfinishedDrillingPlan = Verse.DefDatabase<Verse.ThingDef>.GetNamed(DefNames.Thing_UnfinishedDrillingPlan);
 		public static Verse.ThingDef @Thing_CoreDrill { get { return _Thing_CoreDrill; } }
-		public static Verse.EffecterDef @Effecter_Drill { get { return _Effecter_Drill; } }
-		public static RimWorld.StatDef @Stat_MaxHitPoints { get { return _Stat_MaxHitPoints; } }
-		public static RimWorld.SkillDef @Skill_Mining { get { return _Skill_Mining; } }
-		public static RimWorld.StatDef @Stat_MiningSpeed { get { return _Stat_MiningSpeed; } }
-		public static RimWorld.StatDef @Stat_MiningYield { get { return _Stat_MiningYield; } }
 		public static Verse.ThingDef @Thing_UnfinishedDrillingPlan { get { return _Thing_UnfinishedDrillingPlan; } }
 	}
 }
