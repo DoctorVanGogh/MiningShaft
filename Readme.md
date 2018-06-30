@@ -1,4 +1,4 @@
-[![RimWorld Beta 18](https://img.shields.io/badge/RimWorld-Beta%2018-brightgreen.svg)](http://rimworldgame.com/) [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![RimWorld 1.0-unstable](https://img.shields.io/badge/RimWorld-1.0%20unstable-yellow.svg)](http://rimworldgame.com/) [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 <p align="center">
 <em>"Because OCD can just screw up everything"</em>
@@ -49,6 +49,8 @@ Sandstone | 12 | 1 | -
 The generalized formula also allows inclusion of any custom mod-materials.
 
 ## Third Party Notices
+
+Drill artwork by pointcache - licensed under "The Unlicense".
 
 Based on TheUbie's "[Deep Core Miner](https://ludeon.com/forums/index.php?topic=25346.45).
 
