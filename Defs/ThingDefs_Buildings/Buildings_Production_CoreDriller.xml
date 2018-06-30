@@ -3,13 +3,13 @@
   <ThingDef Name="BuildingBase" Abstract="True">
     <category>Building</category>
     <thingClass>Building</thingClass>
-    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
     <selectable>true</selectable>
     <drawerType>MapMeshAndRealTime</drawerType>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <repairEffect>Repair</repairEffect>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-    <filthLeaving>BuildingRubble</filthLeaving>
+    <filthLeaving>Filth_RubbleBuilding</filthLeaving>
 		<statBases>
 			<SellPriceFactor>0.70</SellPriceFactor>
 		</statBases>
@@ -21,7 +21,7 @@
     <label>core drill</label>
     <description>A ultra deep-crust drilling rig for extracting minerals from deep under the surface.</description>
     <graphicData>
-      <texPath>Things/Building/Production/DeepDrill</texPath>
+      <texPath>Building/Production/DeepCoreDrill</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(3,3)</drawSize>
       <drawRotated>false</drawRotated>
@@ -29,7 +29,7 @@
     <costStuffCount>75</costStuffCount>
     <costList>
       <Steel>2000</Steel>
-      <Component>10</Component>
+      <ComponentIndustrial>10</ComponentIndustrial>
       <Plasteel>400</Plasteel>
     </costList>
     <altitudeLayer>Building</altitudeLayer>
@@ -57,7 +57,6 @@
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
-        <startElectricalFires>false</startElectricalFires>
         <basePowerConsumption>2500</basePowerConsumption>
       </li>
       <li Class="CompProperties_Flickable"/>

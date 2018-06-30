@@ -33,16 +33,16 @@ namespace DoctorVanGogh.OmniCoreDrill {
                     ThingDef t = b.mineableThing;
 
                     var recipe = new RecipeDef {
-                                     efficiencyStat = DefReferences.Stat_MiningYield,
-                                     workSpeedStat = DefReferences.Stat_MiningSpeed,
-                                     effectWorking = DefReferences.Effecter_Drill,
+                                     efficiencyStat = StatDefOf.MiningYield,
+                                     workSpeedStat = StatDefOf.MiningSpeed,
+                                     effectWorking = EffecterDefOf.Drill,
                                      workSkillLearnFactor = 0.2f,
-                                     workSkill = DefReferences.Skill_Mining,
+                                     workSkill = SkillDefOf.Mining,
                                      defName = $"OCD_MineDeep{t.defName}",
                                      label = LanguageKeys.keyed.ocd_label.Translate(t.LabelCap),
                                      jobString = LanguageKeys.keyed.ocd_jobString.Translate(t.LabelCap),
-                                     products = new List<ThingCountClass> {
-                                                    new ThingCountClass {
+                                     products = new List<ThingDefCountClass> {
+                                                    new ThingDefCountClass {
                                                         thingDef = t,
                                                         count = 0
                                                     }
@@ -66,7 +66,7 @@ namespace DoctorVanGogh.OmniCoreDrill {
         private static DrillingProperties CalculateDrillProperties(ThingDef source, out BuildingProperties b) {
             b = source.building;
 
-            float? hitpointsPerLump = source.statBases.FirstOrDefault(sm => sm.stat == DefReferences.Stat_MaxHitPoints)?.value;
+            float? hitpointsPerLump = source.statBases.FirstOrDefault(sm => sm.stat == StatDefOf.MaxHitPoints)?.value;
 
             if (hitpointsPerLump == null) {
                 return null;
