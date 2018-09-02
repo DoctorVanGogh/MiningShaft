@@ -10,7 +10,7 @@ namespace DoctorVanGogh.OmniCoreDrill {
         public override void SpawnSetup(Map map, bool respawningAfterLoad) {
             base.SpawnSetup(map, respawningAfterLoad);
             if (Recipe == null) {
-                Log.Warning("Spawned an UnfinishedDrillingPlan witrhout a Recipe - removing!");
+                Log.Warning("Spawned an UnfinishedDrillingPlan without a Recipe - removing!");
                 this.Destroy();
             }
         }
