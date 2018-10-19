@@ -99,7 +99,7 @@ namespace DoctorVanGogh.OmniCoreDrill {
             int iYield = (int) Math.Round(yield);
 
             recipe.workAmount = work;
-            recipe.description = LanguageKeys.keyed.ocd_description.Translate(sourceLabel, iYield, material.LabelCap);
+            recipe.description = LanguageKeys.keyed.ocd_description.Translate(new object[] { sourceLabel, iYield, material.LabelCap});
             recipe.products.First().count = iYield;
         }
 

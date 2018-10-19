@@ -3,7 +3,7 @@
     <name>Omni Core Drill</name>
     <author>DoctorVanGogh, TheUbie &amp; pointcache</author>
     <url>https://github.com/DoctorVanGogh/MiningShaft</url>
-    <targetVersion>0.19.2009</targetVersion>
+    <targetVersion>1.0.0</targetVersion>
     <description><![CDATA[ A deep core driller capable of pulling out any material you want, given enough power and work by your pawns.
 
 Supports any and all mod-added mineable materials out of the box.
