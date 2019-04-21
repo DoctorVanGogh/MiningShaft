@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <ThingDef Name="BuildingBase" Abstract="True">
+  <ThingDef Name="OCD_BuildingBase" Abstract="True">
     <category>Building</category>
     <thingClass>Building</thingClass>
     <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
@@ -15,7 +15,7 @@
 		</statBases>
   </ThingDef>
 
-  <ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="OCD_BuildingBase">
     <defName>CoreDrill</defName>
     <thingClass>Building_WorkTable</thingClass>
     <label>core drill</label>
