@@ -4,7 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Reflection;
 using DoctorVanGogh.OmniCoreDrill.Patches;
-using Harmony;
+using HarmonyLib;
 
 using RimWorld;
 using UnityEngine;
@@ -29,7 +29,7 @@ namespace DoctorVanGogh.OmniCoreDrill {
         public OmniCoreDrillMod(ModContentPack content) : base(content) {
             _settings = GetSettings<Settings>();
 
-            var harmonyInstance = HarmonyInstance.Create("DoctorVanGogh.OmniCoreDrill");
+            var harmonyInstance = new Harmony("DoctorVanGogh.OmniCoreDrill");
             harmonyInstance.PatchAll(Assembly.GetExecutingAssembly());
             
             Log.Message("Initialized OmniCoreDrill patches");

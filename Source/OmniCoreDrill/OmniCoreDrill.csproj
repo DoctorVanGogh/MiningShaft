@@ -10,9 +10,8 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DoctorVanGogh.OmniCoreDrill</RootNamespace>
     <AssemblyName>OmniCoreDrill</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
@@ -20,7 +19,7 @@
     <DebugSymbols>false</DebugSymbols>
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\Assemblies\</OutputPath>
+    <OutputPath>..\..\v1.1\Assemblies\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -28,26 +27,33 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\Assemblies\</OutputPath>
+    <OutputPath>..\..\v1.1\Assemblies\</OutputPath>
     <DefineConstants>
     </DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="0Harmony, Version=1.0.9.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Assemblies\0Harmony.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Assembly-CSharp">
-      <HintPath>$(RimworldManagedDir)\Assembly-CSharp.dll</HintPath>
+      <HintPath>$(RimworldManagedDir11)\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="UnityEngine">
-      <HintPath>$(RimworldManagedDir)\UnityEngine.dll</HintPath>
+      <HintPath>$(RimworldManagedDir11)\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(RimworldManagedDir11)\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>$(RimworldManagedDir11)\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>$(RimworldManagedDir11)\UnityEngine.IMGUIModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
@@ -76,6 +82,7 @@
     <Compile Include="[GUI]\Widgets.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Properties\version.txt" />
     <Content Include="[Generated]\Defs.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Defs.cs</LastGenOutput>
@@ -90,7 +97,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Settings.cd" />
-    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Lib.Harmony">
+      <Version>2.0.0.8</Version>
+    </PackageReference>
+    <PackageReference Include="MSBuildTasks">
+      <Version>1.5.0.235</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -106,12 +122,5 @@
     <AssemblyInfo OutputFile="$(ProjectDir)\Properties\AssemblyInfo.cs" CodeLanguage="CS" AssemblyTitle="OmniCoreDrill" AssemblyCopyright="Copyright © DoctorVanGogh 2017" ComVisible="false" Guid="7b307eac-98fb-44c4-a5e1-c4a849842bf9" AssemblyVersion="@(combinedVersion)" />
   </Target>
   <Target Name="AfterBuild">
-  </Target>
-  <Import Project="..\packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets" Condition="Exists('..\packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets')" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('..\packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets'))" />
   </Target>
 </Project>
