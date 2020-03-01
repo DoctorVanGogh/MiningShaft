@@ -123,4 +123,7 @@
   </Target>
   <Target Name="AfterBuild">
   </Target>
+  <PropertyGroup>
+    <PostBuildEvent>DEL "$(OutDir)\0Harmony.dll"</PostBuildEvent>
+  </PropertyGroup>  
 </Project>
